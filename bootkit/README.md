@@ -4,7 +4,9 @@
 ## Description
 
 ```
-Our old MBR-loaded server was infected with some virus and now it doesn't load correctly. However, hackers left the program for sector-by-sector disk reading. Please look, may be you can do something with it?
+Our old MBR-loaded server was infected with some virus and now it doesn't load correctly.
+However, hackers left the program for sector-by-sector disk reading.
+Please look, may be you can do something with it?
 
 ```
 
