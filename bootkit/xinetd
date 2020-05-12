@@ -1,0 +1,16 @@
+service bootkit
+{
+        disable = no
+        type = UNLISTED
+        wait = no
+        server = /home/bootkit/run.sh
+        socket_type = stream
+        protocol = tcp
+        user = bootkit
+        port = 30087
+        flags = REUSE
+        per_source = 3
+        rlimit_cpu = 5
+        instances = 20
+        nice = 18
+}
