@@ -1,0 +1,24 @@
+[Defines]
+  INF_VERSION                    = 0x0001001B
+  BASE_NAME                      = EFItness
+  FILE_GUID                      = 23F0977C-DA42-43F8-96B2-666005332173
+  MODULE_TYPE                    = UEFI_APPLICATION
+  VERSION_STRING                 = 1.0
+  ENTRY_POINT                    = UefiMain
+
+[Sources]
+  EFItness.c
+
+[Packages]
+  EFItness/EFItness.dec
+  ShellPkg/ShellPkg.dec
+  MdePkg/MdePkg.dec
+
+[LibraryClasses]
+  UefiApplicationEntryPoint
+  UefiBootServicesTableLib
+  UefiLib
+  ShellLib
+
+[Protocols]
+  gEfiShellProtocolGuid
