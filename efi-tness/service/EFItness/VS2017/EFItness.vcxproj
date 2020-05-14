@@ -31,27 +31,28 @@
     <VCProjectVersion>15.0</VCProjectVersion>
     <ProjectGuid>{74813F08-55E0-40D4-A829-848E3F376579}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>Makefile</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v141</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>Makefile</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v141</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
     <ConfigurationType>Makefile</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v141</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <ConfigurationType>Makefile</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v141</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <ImportGroup Label="ExtensionSettings">
@@ -76,8 +77,8 @@
     <NMakeCleanCommandLine>BuildVS.bat -a IA32 clean</NMakeCleanCommandLine>
     <NMakeReBuildCommandLine>BuildVS.bat -a IA32 all</NMakeReBuildCommandLine>
     <IncludePath>..\Include;..\Drivers\ScannerDxe;..\..\edk2\MdePkg\Include;..\..\edk2\MdeModulePkg\Include;..\..\edk2\UefiCpuPkg\Include;..\..\edk2\ShellPkg\Include;..\Drivers\ScannerDxe\IA32;..\..\edk2\MdePkg\Include\IA32;$(IncludePath)</IncludePath>
-    <OutDir>..\..\Build\DrWebIA32\DEBUG_VS2017\</OutDir>
-    <IntDir>..\..\Build\DrWebIA32\DEBUG_VS2017\</IntDir>
+    <OutDir>$(SolutionDir)..\..\Build\EFItnessIA32\DEBUG_VS2019\</OutDir>
+    <IntDir>$(SolutionDir)..\..\Build\EFItnessIA32\DEBUG_VS2019\</IntDir>
     <NMakePreprocessorDefinitions>DISABLE_NEW_DEPRECATED_INTERFACES;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -85,8 +86,8 @@
     <NMakeCleanCommandLine>BuildVS.bat -a X64 clean</NMakeCleanCommandLine>
     <NMakeReBuildCommandLine>BuildVS.bat -a X64 all</NMakeReBuildCommandLine>
     <IncludePath>..\Include;..\..\edk2\MdePkg\Include;..\..\edk2\MdeModulePkg\Include;..\..\edk2\UefiCpuPkg\Include;..\..\edk2\ShellPkg\Include;..\..\edk2\MdePkg\Include\X64;$(IncludePath)</IncludePath>
-    <OutDir>$(SolutionDir)..\..\Build\EFItnessX64\DEBUG_VS2017\</OutDir>
-    <IntDir>$(SolutionDir)..\..\Build\EFItnessX64\DEBUG_VS2017\</IntDir>
+    <OutDir>$(SolutionDir)..\..\Build\EFItnessX64\DEBUG_VS2019\</OutDir>
+    <IntDir>$(SolutionDir)..\..\Build\EFItnessX64\DEBUG_VS2019\</IntDir>
     <NMakePreprocessorDefinitions>DISABLE_NEW_DEPRECATED_INTERFACES;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -94,8 +95,8 @@
     <NMakeCleanCommandLine>BuildVS.bat -a IA32 -b RELEASE clean</NMakeCleanCommandLine>
     <NMakeReBuildCommandLine>BuildVS.bat -a IA32 -b RELEASE all</NMakeReBuildCommandLine>
     <IncludePath>..\Include;..\Drivers\ScannerDxe;..\..\edk2\MdePkg\Include;..\..\edk2\MdeModulePkg\Include;..\..\edk2\UefiCpuPkg\Include;..\..\edk2\ShellPkg\Include;..\Drivers\ScannerDxe\IA32;..\..\edk2\MdePkg\Include\IA32;$(IncludePath)</IncludePath>
-    <OutDir>..\..\Build\DrWebIA32\RELEASE_VS2017\</OutDir>
-    <IntDir>..\..\Build\DrWebIA32\RELEASE_VS2017\</IntDir>
+    <OutDir>$(SolutionDir)..\..\Build\EFItnessIA32\RELEASE_VS2019\</OutDir>
+    <IntDir>$(SolutionDir)..\..\Build\EFItnessIA32\RELEASE_VS2019\</IntDir>
     <NMakePreprocessorDefinitions>DISABLE_NEW_DEPRECATED_INTERFACES;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -103,8 +104,8 @@
     <NMakeCleanCommandLine>BuildVS.bat -a X64 -b RELEASE clean</NMakeCleanCommandLine>
     <NMakeReBuildCommandLine>BuildVS.bat -a X64 -b RELEASE all</NMakeReBuildCommandLine>
     <IncludePath>..\Include;..\..\edk2\MdePkg\Include;..\..\edk2\MdeModulePkg\Include;..\..\edk2\UefiCpuPkg\Include;..\..\edk2\ShellPkg\Include;..\..\edk2\MdePkg\Include\X64;$(IncludePath)</IncludePath>
-    <OutDir>$(SolutionDir)..\..\Build\EFItnessX64\RELEASE_VS2017\</OutDir>
-    <IntDir>$(SolutionDir)..\..\Build\EFItnessX64\RELEASE_VS2017\</IntDir>
+    <OutDir>$(SolutionDir)..\..\Build\EFItnessX64\RELEASE_VS2019\</OutDir>
+    <IntDir>$(SolutionDir)..\..\Build\EFItnessX64\RELEASE_VS2019\</IntDir>
     <NMakePreprocessorDefinitions>DISABLE_NEW_DEPRECATED_INTERFACES;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
   </PropertyGroup>
   <ItemDefinitionGroup>

@@ -8,10 +8,8 @@ SET "OUTPUT_PATH=%~3"
 cd ../../edk2
 
 REM Set Visual Studio version
-SET TAG_NAME=VS2017
-
-REM IF "%~4" == "15.0" SET TAG_NAME=VS2017
-REM IF "%~4" == "16.0" SET TAG_NAME=VS2019
+IF "%~4" == "15.0" SET TAG_NAME=VS2017
+IF "%~4" == "16.0" SET TAG_NAME=VS2019
 
 REM Get build configuration
 IF /I "%~5" == "RELEASE" (

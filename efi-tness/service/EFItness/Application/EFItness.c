@@ -73,7 +73,7 @@ UINT8 gExerciseCount = 2;
 
 EXERCISE gExerciseList[MAX_EXERCISE_COUNT] = {
     { L"Flip"            , (ACTION_FUNC)ExerciseFlip },
-    { L"Where our hands?", (ACTION_FUNC)ExerciseHands },
+    { L"Where are our hands?", (ACTION_FUNC)ExerciseHands },
     { {0}, 0 },
     { {0}, 0 },
     { {0}, 0 },
