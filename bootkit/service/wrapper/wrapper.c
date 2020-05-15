@@ -37,7 +37,7 @@ long read_str(char *str, size_t size)
 {
     long retn = read(0, str, size);
     
-    if (retn < 0) {
+    if (retn <= 0) {
         printf("read error");
         exit(1);
     }
